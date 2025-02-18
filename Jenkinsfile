@@ -16,7 +16,7 @@ pipeline{
 		}
 		steps{
 		  withSonarQubeEnv('Bharath-SonarQube-Server'){
-			sh "${sonarHome}/bin/sonar-scanner"
+			sh "${scannerHome}/bin/sonar-scanner"
 			}
 		    }
 		}
